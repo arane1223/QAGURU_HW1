@@ -23,6 +23,6 @@ public class SearchTest {
     void successfulSearchTestYa () {
         open ("https://ya.ru/");
         $("[name=text]").setValue("art republic").pressEnter();
-        $("html").shouldHave(text("Интерьерная фотостудия"));
+        $("html").shouldHave(text("Интерьерная фотостудия c с большими"));
     }
 }

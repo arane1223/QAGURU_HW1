@@ -20,7 +20,7 @@ public class SearchTest {
     }
 
     @Test //это я сам чуть-чуть попрактиковался
-    void successfulSearchTestYa () {
+    void successfulSearchTestGoogle2 () {
         open ("https://www.google.com/");
         $("[name=q]").setValue("art republic").pressEnter();
         $("html").shouldHave(text("Интерьерная фотостудия"));

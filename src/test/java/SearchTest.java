@@ -22,7 +22,7 @@ public class SearchTest {
     @Test //это я сам чуть-чуть попрактиковался
     void successfulSearchTestYa () {
         open ("https://ya.ru/");
-        $("[name=q]").setValue("art republic").pressEnter();
+        $("[name=text]").setValue("art republic").pressEnter();
         $("html").shouldHave(text("Интерьерная фотостудия в Екатерринбурге"));
     }
 }

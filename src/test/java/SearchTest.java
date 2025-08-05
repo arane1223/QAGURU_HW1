@@ -21,8 +21,8 @@ public class SearchTest {
 
     @Test //это я сам чуть-чуть попрактиковался
     void successfulSearchTestYa () {
-        open ("https://ya.ru/");
-        $("[name=text]").setValue("art republic").pressEnter();
+        open ("https://www.google.com/");
+        $("[name=q]").setValue("art republic").pressEnter();
         $("html").shouldHave(text("Интерьерная фотостудия"));
     }
 }
